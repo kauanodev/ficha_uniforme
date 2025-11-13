@@ -7,7 +7,7 @@ const hoje = new Date().toISOString().split('T')[0];
 inputData.value = hoje;
 const [ano, mes, dia] = inputData.value.split("-");
 const dataFormatada = `${dia}/${mes}/${ano}`;
-const fotoAtual = await converterImagemParaBase64(document.getElementById("fotoUniforme"));
+
 //FOTO
 // const inputFoto = document.getElementById('fotoUniforme');
 //     inputFoto.addEventListener("change", async (event) => {
