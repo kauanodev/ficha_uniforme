@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ficha de Uniforme</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Ficha de Uniforme</h1>
+    <form id="formFicha">
+      <div class="grupo">
+        <label for="nome">Técnico:</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+
+      <div class="grupo">
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+      </div>
+
+      <h2>Quantidade de Fardamento Atual</h2>
+      <div class="grupo">
+        <label for="camisetasAtual">Camisetas:</label>
+        <input type="number" id="camisetasAtual" required name="camisetasAtual">
+      </div>
+      <div class="grupo">
+        <label for="blusasUVAtual">Blusas UV:</label>
+        <input type="number" id="blusasUVAtual" required name="blusasUVAtual">
+      </div>
+      <div class="grupo">
+        <label for="calcasAtual">Calças:</label>
+        <input type="number" id="calcasAtual" required name="calcasAtual">
+      </div>
+      <div class="grupo">
+        <label for="botaAtual">Bota ou Sapato:</label>
+        <input type="number" id="botaAtual" required name="botaAtual">
+      </div>
+      <div class="grupo">
+        <label for="cintoAtual">Cinto:</label>
+        <input type="number" id="cintoAtual" required name="cintoAtual">
+      </div>
+
+      <h2>Lista de Requisições</h2>
+      <div class="grupo">
+        <label for="camisetasReq">Camisetas:</label>
+        <input type="number" id="camisetasReq" name="camisetasReq">
+      </div>
+      <div class="grupo">
+        <label for="blusasUVReq">Blusas UV:</label>
+        <input type="number" id="blusasUVReq" name="blusasUVReq">
+      </div>
+      <div class="grupo">
+        <label for="calcasReq">Calças:</label>
+        <input type="number" id="calcasReq" name="calcasReq">
+      </div>
+      <div class="grupo">
+        <label for="botaReq">Bota ou Sapato:</label>
+        <input type="number" id="botaReq" name="botaReq">
+      </div>
+      <div class="grupo">
+        <label for="cintoReq">Cinto:</label>
+        <input type="number" id="cintoReq" name="cintoReq">
+      </div>
+
+      <h2>Medidas/Tamanhos</h2>
+      <div class="grupo">
+        <label for="camisetasMedidas">Camisetas:</label>
+        <input type="text" id="camisetasMedidas" name="camisetasMedidas" placeholder="ex: GG, M , P e etc...">
+      </div>
+      <div class="grupo">
+        <label for="blusasUVMedidas">Blusas UV:</label>
+        <input type="text" id="blusasUVMedidas" name="blusasUVMedidas" placeholder="ex: GG, M , P e etc...">
+      </div>
+      <div class="grupo">
+        <label for="calcaMedidas">Calças:</label>
+        <input type="number" id="calcaMedidas" name="calcaMedidas" placeholder="ex: 40, 42 , 44 e etc...">
+      </div>
+      <div class="grupo">
+        <label for="botaMedidas">Bota ou Sapato:</label>
+        <input type="number" id="botaMedidas" name="botaMedidas" placeholder="ex: 38, 39 40 e etc...">
+      </div>
+      <div class="grupo">
+        <label for="cintoMedidas">Cinto:</label>
+        <input type="text" id="cintoMedidas" name="cintoMedidas" placeholder="ex: P, M, G e etc...">
+      </div>
+
+
+
+
+      <div class="grupo">
+        <label for="fotoUniforme">Foto do Uniforme Atual:</label>
+        <input type="file" id="fotoUniforme" name="fotoUniforme" accept="image/*" capture="environment">
+      </div>
+
+      <button type="button" id="gerarPDF">Gerar PDF</button>
+    </form>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script type="module"  src="script.js" ></script>
+  <script type="module" src="gerarPDF.js"></script>
+</body>
+</html>

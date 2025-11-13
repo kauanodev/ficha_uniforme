@@ -1,0 +1,120 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 15 10 15px rgba(0, 0, 0);
+}
+
+#formFicha {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  color: #005f99;
+  margin-bottom: 25px;
+}
+
+h2 {
+  color:  #005f99;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+  margin-top: 30px;
+}
+
+.grupo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 10px;
+  align-items: flex-start;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"],
+input[type="date"],
+input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="file"] {
+  background-color: #f0f0f0;
+}
+
+button {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005f99;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.1em;
+  }
+
+  input,
+  button {
+    font-size: 0.95em;
+  }
+
+  button {
+    padding: 10px;
+  }
+}
